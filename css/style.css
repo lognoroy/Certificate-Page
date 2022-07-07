@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.master2 {
+    background-image: url('../img/cer1high.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    width: 100%;
+    margin: 0 auto;
+    height:2000px;
+}
+
+.min {
+    position: fixed;
+}
+
+.whole {
+    margin: 0 auto;
+
+
+    background-color: rgba(171, 224, 157,0.5);
+    width: 60%;
+    padding-top: 200px;
+}
+
+.whole2 {
+    width: 75%;
+    margin: 0 auto;
+    text-align:left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.one label:first-child {
+    padding-top: 8px;
+    font-size: 23px;
+}
+
+.one input {
+    height: 40px;
+    font-size: 16px;
+    text-align:center;
+    width:90%;
+    border: hidden;
+}
+
+.two label:first-child {
+    padding-top:8px;
+    font-size: 23px;
+}
+
+.two select {
+    height: 40px;
+    font-size: 18px;
+    text-align:center;
+    width:90%;
+    border: hidden;
+}
+.joint34
+{
+    width:90%;
+
+}
+
+.three {
+    width:45%;
+    float: left;
+
+}
+
+.three label:first-child {
+    padding-top:8px;
+    font-size: 16px;
+}
+
+.three input {
+    height: 30px;
+    font-size: 18px;
+    text-align:center;
+    width:100%;
+    border: hidden;
+}
+
+.four {
+    width:45%;
+    float:right;
+}
+
+.four label:first-child {
+    padding-top:8px;
+    font-size: 18px;
+}
+
+.four input {
+    height:30px;
+    font-size: 18px;
+    text-align:center;
+    width:100%;
+    border: hidden;
+}
+.joint56
+{
+    width:90%;
+
+}
+
+
+.five {
+    width:45%;
+    float: left;
+}
+
+.five label:first-child {
+    padding-top:8px;
+    font-size: 16px;
+}
+
+.five input {
+    height: 30px;
+    font-size: 18px;
+    text-align:center;
+    width:100%;
+    border: hidden;
+}
+
+.six {
+    float: right;
+    width:45%;
+
+}
+
+.six label:first-child {
+    padding-top:8px;
+    font-size: 16px;
+}
+
+.six  input {
+    height:30px;
+    font-size: 18px;
+    text-align:center;
+    width:100%;
+    border: hidden;
+}
+
+
+
+.seven label:first-child {
+    padding-top: 8px;
+    font-size:20px;
+}
+
+.seven input {
+    height: 40px;
+    font-size: 18px;
+    text-align:center;
+    width:90%;
+    border: hidden;
+}
+
+
+
+
+.subcan {
+    width:90%;
+    padding-top: 20px;
+}
+
+
+
+.submit {
+    float: left;
+    width:45%;
+}
+
+.submit button {
+    font-size:16px;
+    height:45px;
+    border: hidden;
+    background-color:rgb(114, 180, 114);
+    border-radius:4%;
+    color: #fff;
+    font-weight:600;
+    font-family: 'Raleway', sans-serif;
+    width:100%;
+    cursor: pointer;
+}
+.submit button:hover {
+    background-color: rgb(169, 255, 169);
+}
+.submit button:disabled {
+    cursor: not-allowed;
+}
+
+
+.cancel {
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 4%;
+    text-align: center;
+    float: right;
+    width:45%;
+}
+
+.cancel button {
+    color:rgb(114, 180, 114);
+    border: none;
+    font-weight: bold;
+    background-color: #fff;
+    height:40px;
+    font-size:16px;
+    width:100%;
+    cursor: pointer;
+}
+.cancel button:hover {
+    background-color: rgb(160, 206, 160);
+    color: #fff;
+}
+
+.error {
+    color: #D8000C;
+    border: 2px solid #D8000C;
+}
+.errortext {
+    color: #D8000C;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 5px 4px;
+    width: 85%;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width:600px)
+{
+    .whole
+     {  
+        margin: 0 auto;
+        width:100%;
+        padding-top: 100px;
+
+    }
+    
+    .whole2 {
+        width:95%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+
+    .three label:first-child 
+    {
+        font-size: 15px;
+    }
+
+
+    .four label:first-child 
+    {
+        font-size: 15px;
+    }
+
+.three input {
+    height: 30px;
+    font-size: 13px;
+    width:100%;
+}
+
+
+.four input {
+    height:30px;
+    font-size: 13px;
+    width:100%;
+}
+
+.five label:first-child {
+    font-size: 13px;
+}
+
+.five input {
+    height: 30px;
+    font-size: 13px;
+    width:100%;
+}
+
+
+.six label:first-child {
+    font-size: 13px;
+}
+
+.six  input {
+    height:30px;
+    font-size: 13px;
+    width:100%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:770px) and (min-width:610px)
+{
+
+    .one input {
+        font-size: 14px;
+    }
+   
+    
+    .two select {
+        font-size: 14px;
+      
+    }
+ 
+    
+    .three label:first-child {
+        font-size: 16px;
+    }
+    
+    .three input {
+        font-size: 14px;
+        
+    }
+    
+   
+    .four label:first-child {
+        font-size: 18px;
+    }
+    
+    .four input {
+        font-size: 14px;
+        
+    }
+    
+    
+   
+    
+    .five label:first-child {
+        font-size: 16px;
+    }
+    
+    .five input {
+        font-size: 14px;
+        
+    }
+    
+  
+    
+    .six label:first-child {
+        font-size: 16px;
+    }
+    
+    .six  input {
+        font-size: 14px;
+        
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+}

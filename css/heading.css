@@ -1,0 +1,274 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.up {
+    width: 100%;
+    height: 145px;
+}
+
+.min {
+    background-color: rgb(79, 135, 135);
+    height: 145px;
+    width: 100%;
+    position: fixed;
+
+}
+
+.big {
+    height: 135px;
+    width:100%;
+    
+}
+
+
+.big a {
+    font-weight: 700; 
+    font-size:70px; 
+    position: relative;
+    top: 35px;
+    left:1%;
+    color: #fff;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-decoration: none;
+}
+
+.pic {
+    position: relative; 
+    left:70%;
+    bottom:110px;
+    border: none;
+    background-color:transparent;
+    height: 80px;
+    width:20%;
+}
+
+.pic:hover {
+    border-radius: 100%;
+}
+
+.pic img {
+    height:100%;
+    width:33%;
+    border-radius: 100%;
+}
+
+.dropdown-content {
+    text-align: left;
+    font-size: 20px;
+    background-color: rgb(33, 32, 41);
+    border-radius: 10px;
+    position:fixed;
+    width: 170px;
+    /*right: 7%;*/
+    z-index:100;
+    display: none;
+    box-shadow: 6px 6px 9px #36E0E8;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: darkcyan;
+    padding:15px;
+}
+
+.dropdown-content a:first-child {
+    border-radius: 10px 10px 0px 0px;
+}
+.dropdown-content a:last-child {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: chartreuse;
+}
+
+.pic:hover .dropdown-content {
+    display: block;
+}
+
+.small1 a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(116, 212, 204);
+    position: relative;
+    bottom: 60px;
+    font-size:25px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+.small1 a:hover {
+    color: rgb(212, 255, 251);
+}
+.small2 a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(116, 212, 204);
+    position: relative;
+
+    bottom: 90px;
+    font-size:25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.small2 a:hover {
+    color: rgb(212, 255, 251);
+}
+
+@media only screen and (max-width:600px)
+{
+    
+.up {
+    width: 100%;
+    height: 145px;
+}
+
+.min {
+    height: 100px;
+    width: 100%;
+}
+
+.big 
+{
+    height: 135px;
+    width:100%;
+    
+
+}
+
+
+.big a{
+    font-weight: 100; 
+    font-size:25px; 
+    position: relative;
+    top:30px;
+}
+
+.pic {
+    position: relative; 
+    left:70%;
+    bottom:110px;
+    height:30px;
+    width:15%;
+}
+
+
+
+.pic img {
+    height:100%;
+    width:68%;
+}
+
+
+
+.small1{
+    position: relative;
+    right:107%;
+}
+
+
+.small1 a {
+    position: relative;
+    bottom: 63px;
+    font-size:11px;
+    font-weight:100;
+}
+
+
+.small2{
+    position: relative;
+    right:115%;
+}
+
+
+.small2 a {
+    position: relative;
+    bottom: 80px;
+    font-size:11px;
+    font-weight: 100;
+}
+
+    
+}
+
+@media only screen and (max-width:770px) and (min-width:600px)
+{
+   
+    .up {
+        width: 100%;
+        height: 145px;
+    }
+    
+    .min {
+        background-color: rgb(79, 135, 135);
+        height: 145px;
+        width: 100%;
+    }
+    
+    .big 
+    {
+        height: 135px;
+        width:100%;
+
+    }
+    
+    
+    .big a {
+        font-weight: 400; 
+        font-size:50px; 
+        position: relative;
+        top: 35px;
+    }
+    
+    .pic {
+        position: relative; 
+        left:77%;
+        bottom:110px;
+        width:20%;
+        height:70px;
+
+
+    }
+    
+    
+    .pic img {
+        height:100%;
+        width:53%;
+        border-radius: 100%;
+    }
+    
+   
+    .small1
+    {
+        position: relative;
+        bottom: 15px;
+        right: 17%;
+    }
+    
+    .small1 a {
+      
+        
+        font-size:20px;
+        font-weight: bold;
+    }
+   
+    .small2
+    {
+        position: relative;
+        bottom:7px;
+        right: 19%;
+    }
+    
+    .small2 a {
+       
+        position: relative;
+        font-size:20px;
+    }
+   
+    
+    
+}

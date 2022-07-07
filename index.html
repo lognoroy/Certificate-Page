@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost/mooccal/stdhome/addc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Add Certificate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" href="http://localhost/mooccal/css/img/MOOCs%20Cal%20Logo%20Circle.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/heading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="master2" data-new-gr-c-s-check-loaded="14.1021.0" data-gr-ext-installed="">
+	<header class="min">
+        <div class="up">
+            <div class="big">
+                <a href="http://localhost/mooccal/stdhome/addc">
+                    CERTIFICATE
+                </a>
+            </div>
+            <div class="small1">
+				<a href="http://localhost/mooccal/stdhome" style="left: 550px;">Home</a>
+            </div>
+            <div class="small2">
+	            <a href="http://localhost/mooccal/aboutus" style="left: 650px;">About Us</a>  
+            </div>
+        </div>
+        <button class="pic">
+            <img src="img/noimg.jpg" alt="small girlpic">
+            <div class="dropdown-content">
+			    <a href="http://localhost/mooccal/stdhome/addc#">My Profile</a>
+                <a href="http://localhost/mooccal/login/logout">Logout</a>
+	        </div>
+        </button>
+	</header>
+	<main>
+		<fieldset class="whole">
+			<form class="whole2">
+				<div class="one" id="cnamebox">
+					<label for="cname">Course Name</label>
+                    <br>
+                    <br>
+					<input type="text" name="cname" id="cname" placeholder="Course Name">
+					<label class="errortext"></label>
+                    <br>
+                    <br>
+				</div>
+				<div class="two" id="platbox">
+					<label for="plat">Platform</label>
+					<br>
+					<br>
+					<select name="plat">
+						<option value="">-Select-</option>
+								<option value="1">Coursera</option>
+								<option value="2">edX</option>
+								<option value="3">NPTEL</option>
+								<option value="4">SWAYAM</option>
+								<option value="5">Udemy</option>
+								<option value="6">Simplilearn</option>
+						</select>
+					<label class="errortext"></label>
+					<br>
+					<br>
+				</div>
+				<div class="joint34 clearfix">
+					
+					<div class="three" id="weeksbox">
+						<label for="weeks">Number of weeks</label>
+						<br>
+						<br>
+						<input type="text" name="weeks" id="weeks" placeholder="Number of Weeks">
+						<label class="errortext"></label>
+						<br>
+						<br>
+					</div>
+					<div class="four" id="pointbox">
+						<label for="point">Points</label>
+	                    <br>
+	                    <br>
+						<input type="text" name="point" id="point" placeholder="Points">
+						<label class="errortext"></label>
+	                    <br>
+	                    <br>
+					</div>
+				</div>
+				<div class="joint56 clearfix">
+					<div class="five" id="startdatebox">
+						<label for="startdate">Starting Date</label>
+	                    <br>
+	                    <br>
+						<input type="date" name="startdate" id="startdate">
+						<label class="errortext"></label>
+	                    <br>
+	                    <br>
+					</div>
+					<div class="six" id="enddatebox">
+						<label for="enddate">Complition Date</label>
+	                    <br>
+	                    <br>
+						<input type="date" name="enddate" id="enddate">
+						<label class="errortext"></label>
+	                    <br>
+	                    <br>
+					</div>
+				</div>
+				<div class="seven" id="certlinkbox">
+					<label for="certlink">Certificate Link (for validation)</label>
+                    <br>
+                    <br>
+					<input type="text" name="certlink" id="certlink" placeholder="Certificate Link">
+					<label class="errortext"></label>
+                    <br>
+                    <br>
+				</div>
+				<div class="subcan clearfix">
+					<div class="submit">
+						<button class="btn" id="submit">Submit</button>
+					</div>
+					<div class="cancel">
+	                    <button type="button" id="cancel">Cancel</button>
+		            </div>
+				</div>
+			</form>
+		</fieldset>
+	</main>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#logout').click(function(){
+				window.location.assign("http://localhost:80/mooccal/login/logout");
+			});
+
+			$('#cancel').click(function(){
+				window.location.assign("http://localhost:80/mooccal/stdhome");
+			});
+
+			$('#submit').click(function(e){
+				e.preventDefault();
+				// console.log($('form').serialize());
+				$('.errortext').text('');
+				$('.errortext').html('');
+				$('.errortext').css('backgroundColor', 'transparent');
+				$('.error').removeClass('error');
+				$('#submit').text('Submitting...');
+				$.ajax({
+					url: 	'http://localhost:80/mooccal/stdhome/addcert',
+					type: 	'post',
+		 			data: 	$('form input, form select').serialize(),
+
+		 			success: function(result) {
+		 				// console.log(result);
+						$('#submit').text('Submit');
+		 				if (result == '1') {
+		 					window.location.assign("http://localhost:80/mooccal/stdhome");
+		 				}
+		 				else if (result == '2') {
+		 					alert("Sorry! Your certificate could not be added. Please try after sometime.");
+		 				}
+		 				else {
+		 					result = JSON.parse(result);
+		 					var error = 0;
+		 					if (result['cname']) {
+		 						$('#cname').addClass('error');
+		 						$('#cnamebox .errortext').html('<i class="fa fa-times-circle"></i> ' + result['cname']);
+		 						$('#cnamebox .errortext').css('display', 'block');
+		 						$('#cnamebox .errortext').css('backgroundColor', '#FFBABA');
+		 						++error;
+		 					}
+		 					if (result['plat']) {
+		 						$('#plat').addClass('error');
+		 						$('#platbox .errortext').html('<i class="fa fa-times-circle"></i> ' + result['plat']);
+		 						$('#platbox .errortext').css('display', 'block');
+		 						$('#platbox .errortext').css('backgroundColor', '#FFBABA');
+		 						++error;
+		 					}
+		 					if (result['weeks']) {
+		 						$('#weeks').addClass('error');
+		 						$('#weeksbox .errortext').html('<i class="fa fa-times-circle"></i> ' + result['weeks']);
+		 						$('#weeksbox .errortext').css('display', 'block');
+		 						$('#weeksbox .errortext').css('backgroundColor', '#FFBABA');
+		 						++error;
+		 					}
+		 					if (result['point']) {
+		 						$('#point').addClass('error');
+		 						$('#pointbox .errortext').html('<i class="fa fa-times-circle"></i> ' + result['point']);
+		 						$('#pointbox .errortext').css('display', 'block');
+		 						$('#pointbox .errortext').css('backgroundColor', '#FFBABA');
+		 						++error;
+		 					}
+		 					if (result['startdate']) {
+		 						$('#startdate').addClass('error');
+		 						$('#startdatebox .errortext').html('<i class="fa fa-times-circle"></i> ' + result['startdate']);
+		 						$('#startdatebox .errortext').css('display', 'block');
+		 						$('#startdatebox .errortext').css('backgroundColor', '#FFBABA');
+		 						++error;
+		 					}
+		 					if (result['enddate']) {
+		 						$('#enddate').addClass('error');
+		 						$('#enddatebox .errortext').html('<i class="fa fa-times-circle"></i> ' + result['enddate']);
+		 						$('#enddatebox .errortext').css('display', 'block');
+		 						$('#enddatebox .errortext').css('backgroundColor', '#FFBABA');
+		 						++error;
+		 					}
+		 					if (result['certlink']) {
+		 						$('#certlink').addClass('error');
+		 						$('#certlinkbox .errortext').html('<i class="fa fa-times-circle"></i> ' + result['certlink']);
+		 						$('#certlinkbox .errortext').css('display', 'block');
+		 						$('#certlinkbox .errortext').css('backgroundColor', '#FFBABA');
+		 						++error;
+		 					}
+
+		 					if (error == 0) {
+		 						alert("Your certificate is added.");
+		 						window.location.assign("http://localhost:80/mooccal/stdhome");
+		 					}
+		 					else {
+		 						return false;
+		 					}
+		 				}
+		 			}
+				});
+			});
+		});
+	</script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
